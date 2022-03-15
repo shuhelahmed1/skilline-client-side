@@ -1,0 +1,10 @@
+/* common css */
+body{
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}
