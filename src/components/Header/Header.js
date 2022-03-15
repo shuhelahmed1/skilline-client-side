@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import '../../img/Polygon 1.png';
+import { NavHashLink } from 'react-router-hash-link';
 const Header = () => {
     return (
         <div>
@@ -15,7 +16,7 @@ const Header = () => {
       <Nav.Link as={Link} to="/home"><span className='menu-link'>Home</span></Nav.Link>
       <Nav.Link as={Link} to="/careers"><span className='menu-link'>Careers</span></Nav.Link>
       <Nav.Link as={Link} to="/blog"><span className='menu-link'>Blog</span></Nav.Link>
-      <Nav.Link as={Link} to="/aboutus"><span className='menu-link'>About Us</span></Nav.Link>
+      <NavHashLink className='mt-2' as={Link} to="/home/#aboutus"><span className='menu-link'>About Us</span></NavHashLink>
       <Nav.Link as={Link} to="/login"><span className='login-link'>Login</span></Nav.Link>
       <Nav.Link as={Link} to="/signup"><span className=' signup-link'>Sign Up</span></Nav.Link>
      

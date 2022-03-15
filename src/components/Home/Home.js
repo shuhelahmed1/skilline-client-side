@@ -8,9 +8,11 @@ import airbnb from  '../../img/airbnb 1.png';
 import netflix from  '../../img/netflix.png';
 import amazon from  '../../img/amazon.png';
 import grab from  '../../img/grab-logo.png';
-import bill from '../../img/Group 79.png'
-import schedule from '../../img/Group 80.png'
-import tracking from '../../img/Group 81.png'
+import bill from '../../img/Group 79.png';
+import schedule from '../../img/Group 80.png';
+import tracking from '../../img/Group 81.png';
+import about1 from '../../img/Group 22.png';
+import about2 from '../../img/Group 23.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home = () => {
@@ -76,6 +78,30 @@ const Home = () => {
                     <img src={tracking} alt="" />
                     <h5>Customer Tracking</h5> 
                     <p>Automate and track emails to individuals or groups. Skilline's built-in-system helps organize your organization</p>
+                </div>
+            </div>
+        </section>
+
+        {/* about us section */}
+        <section id='aboutus'>
+            <div className='about-us-intro'>
+                <h4 className='about-us-blue'>What is <span className='about-us-orange'>Skilliine?</span></h4>
+                <p>Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
+            </div>
+            <div className='about-us-card-container d-grid'>
+                <div className='about-us-card'>
+                    <img src={about1} alt="" />
+                    <div className='about-us-instructor'>
+                        <h4>FOR INSTRUCTORS</h4>
+                        <a className='link-for-instructor' target="_blank" rel="noopener noreferrer" href="https://meet.google.com/wjw-nqpf-vof">Start a class today</a>
+                    </div>
+                </div>
+                <div className='about-us-card'>
+                <img src={about2} alt="" />
+                <div className='about-us-student'>
+                        <h4>FOR STUDENTS</h4>
+                        <a className='link-for-student' target="_blank" rel="noopener noreferrer" href="https://meet.google.com/wjw-nqpf-vof">Enter access code</a>
+                    </div>
                 </div>
             </div>
         </section>

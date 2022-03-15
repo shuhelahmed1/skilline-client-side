@@ -1,0 +1,39 @@
+.footer-section{
+    width: 100%;
+    background: #252641;
+}
+.footer-container{
+    background: #252641;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-top{
+    padding: 80px 0;
+    color: white;
+}
+.footer-middle{
+    color: white;
+    margin-bottom: 100px;
+}
+.footer-middle input{
+    background: #252641;
+    border: 1px solid #83839A;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 3px 8px;
+    color: white;
+}
+.subscribe-button{
+    background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 3px 8px;
+}
+.footer-bottom{
+    padding-bottom: 40px;
+}
+.footer-bottom a{
+    color: white;
+}
