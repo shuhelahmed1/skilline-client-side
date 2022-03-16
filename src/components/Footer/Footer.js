@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
+    const emailRef = useRef();
+    const handleSubscriber = e =>{
+        e.preventDefault();
+        const email = emailRef.current.value;
+        const newSubscriber = {email}
+        fetch('http://localhost:5000/subscribers', {
+            method: 'POST',
+            headers:{
+                'content-type': 'application/json' 
+            },
+            body: JSON.stringify(newSubscriber)
+        })
+        .then(res=>res.json())
+        .then(data => {
+            alert('You are successfully subscribed')
+            
+        })
+        e.target.reset();
+    }
     return (
         <>
         <footer className='footer-section'>
@@ -13,8 +32,10 @@ const Footer = () => {
                 </div>
                 <div className='footer-middle'>
                     <p>Subscribe to get our Newsletter</p>
-                    <input type="text" placeholder='Your Email' name="" id="" />
-                    <button className='subscribe-button'>Subscribe</button>
+                    <form onSubmit={handleSubscriber}>
+                    <input type="email" ref={emailRef} placeholder='Your Email' name="" id="" />
+                    <button type='submit' className='subscribe-button'>Subscribe</button>
+                    </form>
                 </div>
                 <div className='footer-bottom'>
                     <Link to="/careers">Careers</Link>
