@@ -8,7 +8,7 @@ const Footer = () => {
         e.preventDefault();
         const email = emailRef.current.value;
         const newSubscriber = {email}
-        fetch('http://localhost:5000/subscribers', {
+        fetch('https://fast-sands-35735.herokuapp.com/subscribers', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json' 

@@ -23,7 +23,7 @@ const Home = () => {
         <section>
         <div className='banner-section d-grid'>
         <div>
-            <h1><span className='orange-text'>Studying</span> <span className='blue-text'>Online is now much easier</span></h1>
+            <h1><span className='banner-heading-start'>Studying</span> <span className='banner-heading-end'>Online is now much easier</span></h1>
             <p>Skilline is an interesting platform that will teach you in more an interactive way</p>
             <a className='banner-join-link' target="_blank" rel="noopener noreferrer" href="https://meet.google.com/wjw-nqpf-vof">Join for free</a>
             <img className='banner-watch-icon' src={polygon2} alt="" />
@@ -155,6 +155,19 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+        </section>
+
+        {/* testimonial section */}
+        <section>
+                <div className='testimonial-line'></div>
+                <span className='testimonial-heading'>TESTIMONIAL</span>  
+                <h1 className='blue-text'>What they say?</h1> 
+                <p>Skilline has got more than 100k positive ratings from our users around the world.</p>
+                <br />
+                <p>Some of the students and teachers were greatly helped by the Skilline.</p>
+                <br />
+                <p>Are you too? Please give your assessment</p>
+                <Link className='orange-text assessment-link' to='/assessment'>Write your assessment</Link>
         </section>
         </>
     );
