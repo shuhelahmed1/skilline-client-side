@@ -16,6 +16,8 @@ import about2 from '../../img/Group 23.png';
 import pupils from '../../img/confident-teacher-explaining-lesson-pupils 1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import Testimonial from '../Testimonial/Testimonial';
+import Review from '../Review/Review';
 
 const Home = () => {
     return (
@@ -157,18 +159,9 @@ const Home = () => {
             </div>
         </section>
 
-        {/* testimonial section */}
-        <section>
-                <div className='testimonial-line'></div>
-                <span className='testimonial-heading'>TESTIMONIAL</span>  
-                <h1 className='blue-text'>What they say?</h1> 
-                <p>Skilline has got more than 100k positive ratings from our users around the world.</p>
-                <br />
-                <p>Some of the students and teachers were greatly helped by the Skilline.</p>
-                <br />
-                <p>Are you too? Please give your assessment</p>
-                <Link className='orange-text assessment-link' to='/assessment'>Write your assessment</Link>
-        </section>
+         {/* testimonial section */}
+         <Testimonial></Testimonial>
+         <Review></Review>
         </>
     );
 };

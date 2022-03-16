@@ -230,17 +230,3 @@
     margin-top: 10px;
 }
 
-/* testimonial section */
-
-.testimonial-line{
-    width: 80px;
-    border: 1px solid #525596;
-    display: inline-block;
-    margin: 0 20px 5px 0;
-}
-
-.assessment-link{
-    padding: 5px;
-    border: 1px solid #F48C06;
-    border-radius: 80px;
-    }

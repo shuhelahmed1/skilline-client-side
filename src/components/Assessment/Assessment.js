@@ -13,7 +13,6 @@ const Assessment = () => {
     const comment = commentRef.current.value;
     const rating = ratingRef.current.value; 
     const newReview = {name, img, comment, rating}
-    console.log(newReview)
     fetch('https://fast-sands-35735.herokuapp.com/assessments',{
         method: 'POST',
         headers: {
