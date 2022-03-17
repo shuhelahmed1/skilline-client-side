@@ -1,0 +1,21 @@
+
+/* trusted companies section */
+
+.trusted-companies-section{
+    grid-template-columns: repeat(6, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+.trusted-companies-section img{
+    width: 80%;
+}
+.trusted-companies-heading{
+    text-align: center;
+    margin: 100px 0 54px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: #696984;
+}

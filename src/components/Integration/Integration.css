@@ -1,0 +1,11 @@
+
+/* integration section */
+.integration-section-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.integration-icons-container{
+    width: 75%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}

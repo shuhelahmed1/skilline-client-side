@@ -1,0 +1,68 @@
+
+
+/* about us section */
+
+.about-us-intro{
+    width: 52%;
+    margin: 0 auto;
+}
+
+.about-us-blue{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 180%;
+    text-align: center;
+    color: #2F327D;
+    margin: 158px 0 20px;
+}
+
+.about-us-orange{
+    color: #F59316; 
+}
+
+.about-us-card-container{
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    grid-gap: 100px;
+}
+
+.about-us-card{
+    position: relative;
+}
+.about-us-card-container img{
+    width: 100%;
+}
+.about-us-instructor, .about-us-student{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+.about-us-instructor h4, .about-us-student h4{
+    margin-bottom: 17px;
+}
+
+.link-for-instructor{
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.link-for-instructor:hover{
+    border: none;
+    background: rgba(35, 189, 238, 0.9);
+}
+
+.link-for-student{
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(35, 189, 238, 0.9);
+}
+
+.link-for-student:hover{
+    border: 1px solid white;
+    background-color: transparent;
+}

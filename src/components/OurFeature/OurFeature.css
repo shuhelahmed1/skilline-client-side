@@ -1,0 +1,25 @@
+/* our feature */
+.our-feature-content{
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+.our-feature-img{
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+}
+.our-feature-btn1{
+    background-color: #5d70a0;  
+    border: none;
+    border-radius: 5px; 
+    color: white;
+    margin: 10px 15px 0 0;
+}
+.our-feature-btn2{
+    background: #E13468;;  
+    border: none;
+    border-radius: 10px; 
+    color: white;
+    margin-top: 10px;
+}

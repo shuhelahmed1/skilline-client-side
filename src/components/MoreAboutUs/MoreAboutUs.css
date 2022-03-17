@@ -1,0 +1,7 @@
+/* more about us */
+
+.more-about-us{
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,1fr);
+}

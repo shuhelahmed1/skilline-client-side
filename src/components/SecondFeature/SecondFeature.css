@@ -1,0 +1,38 @@
+
+
+/* second feature section */
+.second-feature-section{
+    width: 75%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.second-feature-heading{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+}
+
+.second-feature-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #696984;
+}
+
+.more-feature-btn{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    padding: 5px;
+    border: 1px solid #F48C06;
+    border-radius: 20px;
+}
+
+.more-feature-btn:hover{
+    color: #F48C06;
+}

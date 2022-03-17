@@ -1,0 +1,23 @@
+
+
+/* tools section */
+.tools-section-top{
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.tools-top-heading{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+}
+
+.tools-top-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #696984;
+}
