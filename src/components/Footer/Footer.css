@@ -23,6 +23,7 @@
     margin-right: 10px;
     padding: 3px 8px;
     color: white;
+    width: 100%;
 }
 .subscribe-button{
     background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
@@ -36,4 +37,12 @@
 }
 .footer-bottom a{
     color: white;
+}
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    
 }

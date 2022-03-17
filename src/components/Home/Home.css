@@ -156,6 +156,7 @@
     margin: 0 auto;
     grid-gap: 100px;
 }
+
 .about-us-card{
     position: relative;
 }
@@ -230,3 +231,109 @@
     margin-top: 10px;
 }
 
+/* tools section */
+.tools-section-top{
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+.tools-top-heading{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+}
+
+.tools-top-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #696984;
+}
+
+/* second feature section */
+.second-feature-section{
+    width: 75%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.second-feature-heading{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 160%;
+}
+
+.second-feature-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    color: #696984;
+}
+
+.more-feature-btn{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: 0.02em;
+    padding: 5px;
+    border: 1px solid #F48C06;
+    border-radius: 20px;
+}
+
+.more-feature-btn:hover{
+    color: #F48C06;
+}
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .banner-section{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    .trusted-companies-section{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    .trusted-companies-section img{
+        width: 95%;
+    }
+
+    .cloud-software-facilities{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    .about-us-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    .more-about-us{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .our-feature-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tools-section-top{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .second-feature-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

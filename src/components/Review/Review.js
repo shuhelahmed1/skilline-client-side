@@ -1,18 +1,17 @@
-
-import React, { useEffect, useState } from 'react';
-import Testimonial from '../Testimonial/Testimonial';
+import React, { useState } from 'react';
+import Reviews from '../Reviews/Reviews';
 
 const Review = () => {
-    const [reviews, setReviews] = useState([]);
-    
+    const [review, setReview] = useState([])
+    fetch('https://fast-sands-35735.herokuapp.com/assessments')
+    .then(res=> res.json())
+    .then(data=> setReview(data))
     return (
-        <>
         <div>
-            <div>
-                
-            </div>
+            {
+                review.map(reviews=> <Reviews key={reviews._id} reviews={reviews}></Reviews>)
+            }
         </div>
-        </>
     );
 };
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Testimonial.css';
+import './Reviews.css';
 
-const Testimonial = ({review}) => {
+const Reviews = ({reviews}) => {
+
     return (
         <>
-        <section>
-            <div>
-                <div className='testimonial-line'></div>
-                    <span className='testimonial-heading'>TESTIMONIAL</span>  
+           <div>
+                <div className='reviews-line'></div>
+                    <span className='reviews-heading'>TESTIMONIAL</span>  
                     <h1 className='blue-text'>What they say?</h1> 
                     <p>Skilline has got more than 100k positive ratings from our users around the world.</p>
                     <br />
@@ -20,12 +20,11 @@ const Testimonial = ({review}) => {
             <div>
                 <img src="" alt="" />
                 <div>
-                    <h1>{review}</h1>
+                 <h1>{reviews.name}</h1>
                 </div>
-            </div> 
-        </section>
+            </div>  
         </>
     );
 };
 
-export default Testimonial;
+export default Reviews;

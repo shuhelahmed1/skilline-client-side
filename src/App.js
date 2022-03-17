@@ -6,7 +6,7 @@ import Assessment from './components/Assessment/Assessment';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import Review from './components/Review/Review';
+import MoreFeatures from './components/MoreFeatures/MoreFeatures';
 
 function App() {
   return (
@@ -23,7 +23,9 @@ function App() {
         <Route path='/assessment'>
         <Assessment></Assessment>
         </Route>
-      
+        <Route path='/morefeatures'>
+        <MoreFeatures></MoreFeatures>
+        </Route>
       </Switch>
       <Footer></Footer>
       </BrowserRouter>

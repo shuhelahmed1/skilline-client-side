@@ -14,10 +14,11 @@ import tracking from '../../img/Group 81.png';
 import about1 from '../../img/Group 22.png';
 import about2 from '../../img/Group 23.png';
 import pupils from '../../img/confident-teacher-explaining-lesson-pupils 1.png';
+import tools from '../../img/Group 122.png';
+import secondFeature from '../../img/Group 106.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import Testimonial from '../Testimonial/Testimonial';
-import Review from '../Review/Review';
+
 
 const Home = () => {
     return (
@@ -159,9 +160,38 @@ const Home = () => {
             </div>
         </section>
 
-         {/* testimonial section */}
-         <Testimonial></Testimonial>
-         <Review></Review>
+        {/* tools section */}
+        <section>
+            <div className='tools-section-top d-grid'>
+                <div>
+                    <h4 className='tools-top-heading blue-text'><span className='orange-text'>Tools</span> For Teachers and Learners</h4>
+                    <p className='tools-top-text'>Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students for complete and submit.</p>
+                </div>
+                <div>
+                    <img className='w-100' src={tools} alt="" />
+                </div>
+            </div>
+        </section>
+
+        {/* second feature section */}
+        <section>
+            <div className='second-feature-section d-grid'>
+                <div>
+                    <img className='w-100' src={secondFeature} alt="" />
+                </div>
+                <div>
+                    <h4 className='blue-text second-feature-heading'>One-on-One <span className='orange-text'>Discussions</span></h4>
+                    <p className='second-feature-text'>Teachers and teacher assistants can talk with students privately without leaving the zoom environments.</p>
+                </div>
+            </div>
+            <div className='text-center'>
+            <Link className='more-feature-btn orange-text' to='/morefeatures'>See more features</Link>
+            </div>
+        </section>
+
+        {/* reviews section */}
+        {/* <Reviews></Reviews> */}
+        {/* <Review></Review> */}
         </>
     );
 };
