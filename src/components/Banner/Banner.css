@@ -68,3 +68,15 @@
 .banner-right-img{
     width: 100%;
 }
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .banner-section{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+}

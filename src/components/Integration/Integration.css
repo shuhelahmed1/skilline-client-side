@@ -8,4 +8,23 @@
     width: 75%;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
+    grid-gap: 15px;
+}
+
+.integration-icons-card{
+    width: 50%;
+}
+
+.integration-link{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    padding: 8px;
+    border: 1px solid #F48C06;
+    border-radius: 20px;
+}
+.integration-link:hover{
+    color: #F48C06;
 }

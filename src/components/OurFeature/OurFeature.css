@@ -23,3 +23,14 @@
     color: white;
     margin-top: 10px;
 }
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .our-feature-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
