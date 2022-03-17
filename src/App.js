@@ -2,6 +2,7 @@ import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import AllIntegrations from './components/AllIntegrations/AllIntegrations';
 import Assessment from './components/Assessment/Assessment';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path='/morefeatures'>
         <MoreFeatures></MoreFeatures>
+        </Route>
+        <Route path='/integrations'>
+        <AllIntegrations></AllIntegrations>
         </Route>
       </Switch>
       <Footer></Footer>

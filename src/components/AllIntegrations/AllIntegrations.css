@@ -1,0 +1,30 @@
+.integrations-heading{
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+.all-integrations-container{
+    width: 80%;
+    margin: 30px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+.all-integrations-card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px gray;
+    padding: 15px;
+}
+
+/* css media query for responsiveness */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .all-integrations-container{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
+}

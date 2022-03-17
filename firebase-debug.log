@@ -1,0 +1,118 @@
+[debug] [2022-03-17T16:43:17.154Z] ----------------------------------------------------------------------
+[debug] [2022-03-17T16:43:17.158Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SHUHEL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-03-17T16:43:17.158Z] CLI Version:   10.3.0
+[debug] [2022-03-17T16:43:17.158Z] Platform:      win32
+[debug] [2022-03-17T16:43:17.158Z] Node Version:  v14.17.1
+[debug] [2022-03-17T16:43:17.163Z] Time:          Thu Mar 17 2022 22:43:17 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-03-17T16:43:17.163Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-17T16:43:17.263Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-17T16:43:17.263Z] > authorizing via signed-in user (shuhel020@gmail.com)
+[debug] [2022-03-17T16:43:17.263Z] [iam] checking project skilline for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-03-17T16:43:17.265Z] > refreshing access token with scopes: []
+[debug] [2022-03-17T16:43:17.266Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-17T16:43:18.227Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 17 Mar 2022 16:43:18 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-17T16:43:18.258Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skilline:testIamPermissions [none]
+[debug] [2022-03-17T16:43:18.259Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skilline:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-17T16:43:21.011Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skilline:testIamPermissions 200
+[debug] [2022-03-17T16:43:21.012Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skilline:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-03-17T16:43:21.016Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/skilline [none]
+[debug] [2022-03-17T16:43:22.233Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/skilline 200
+[debug] [2022-03-17T16:43:22.234Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/skilline {"projectId":"skilline","projectNumber":"470694934165","displayName":"Skilline","name":"projects/skilline","resources":{"hostingSite":"skilline"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'skilline'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-03-17T16:43:22.244Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/skilline [none]
+[debug] [2022-03-17T16:43:22.787Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/skilline 200
+[debug] [2022-03-17T16:43:22.787Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/skilline {"projectId":"skilline","projectNumber":"470694934165","displayName":"Skilline","name":"projects/skilline","resources":{"hostingSite":"skilline"},"state":"ACTIVE"}
+[debug] [2022-03-17T16:43:22.795Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions [none]
+[debug] [2022-03-17T16:43:22.795Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-03-17T16:43:25.310Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions 200
+[debug] [2022-03-17T16:43:25.311Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions {"name":"projects/470694934165/sites/skilline/versions/12527f77f0c30461","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[skilline]: beginning deploy... 
+[info] i  hosting[skilline]: found 23 files in build 
+[debug] [2022-03-17T16:43:25.547Z] [hosting] hash cache [YnVpbGQ] stored for 23 files
+[debug] [2022-03-17T16:43:25.547Z] [hosting][hash queue][FINAL] {"max":172,"min":11,"avg":40.56521739130435,"active":0,"complete":23,"success":23,"errored":0,"retried":0,"total":23,"elapsed":185}
+[debug] [2022-03-17T16:43:25.548Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461:populateFiles [none]
+[debug] [2022-03-17T16:43:25.548Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"bbc81756369a4d9d9cb53342e345b21b6c7b53666b47096821b66ff319b4e7bc","/index.html":"60b8e8f7e478850393ab4ab43629c0f71192b9e1227381d295c3f9f38095ba70","/static/css/main.d26f7b86.css":"aa0f21241cfccac002054dfe06e10eb7d0675a4a1906f38e94ba33a771351f88","/static/js/787.85f42691.chunk.js":"09196a6ee6ae763f417907588c0e0355082dc1e3e6a3301cf0874792beb5c67e","/static/css/main.d26f7b86.css.map":"2efd52191738b91c0d50a0842b5ac29fd4f1ef1322a2528d0918c9ec70df5017","/static/js/main.27652898.js.LICENSE.txt":"c585584484a53b95995eae5e565865edbb98d9007477a6dfd1db955529815c2b","/static/js/787.85f42691.chunk.js.map":"69486ccc3003f3899be3b646cd19f917a2d78cd249d92738884af8434f805dd0","/static/media/Group 79.42bf70f16663f8bdfd04.png":"044da37a4b6283054dbeb86892e007540ed30d8b0460b24764ab93958041bea6","/static/media/Group 80.95401198a976c07b9fc8.png":"a2737082a288b7696737c67a52b22d908934d936d88d03143db247e7a85baacc","/static/media/Group 81.f30545726599eab7aee5.png":"ad437b28691f1cd38ab52f0784995bc46fd2ff165068308626f752987178ed98","/static/media/one-drive.6a8cbed21d9042a5c71b.png":"ce22270080176e15a214fd7386db0c68f944d7e2e362b8df07060ee7a1bbe336","/static/media/Group 22.1de38fc4b56ff2796e64.png":"ab8a486623f2df069645c88336e9e9e63f5645e450aebd6dc9298474baeb8faa","/static/js/main.27652898.js":"f95cb062df1cc4235f203a24638458f5e6db6f621d9e1f58ad8dd72b08973515","/static/media/Group 106.c2e709296b9f6b3df16e.png":"7bb5a436c16df2e97578efadea8e94480d2d2878c77a42f68777a3d18b4c8aa4","/static/media/Group 23.8101d71cac5b7da2134e.png":"3bb6a187514e2a72ede9ecc34701c8275fad29ddb1a4397abe6feff43b0d221a","/static/media/Group 122.4331c7ef44b88ed82595.png":"2f44f91c40be4e1ad9efd5e3fb3acd16bb50de5ef41685d72c3b5a3c59f033e2","/static/media/confident-teacher-explaining-lesson-pupils 1.3cc41c5d0b77a12826bb.png":"747a1268d66231dd32ab62bf2b16c72441988fed80fe36b6e7a87187bcbdf248","/static/js/main.27652898.js.map":"192be4411019d42dc6fa2098372f84f4a8abdfd3e253542fd01897d271d195ea"}}
+[debug] [2022-03-17T16:43:27.659Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461:populateFiles 200
+[debug] [2022-03-17T16:43:27.660Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461:populateFiles {"uploadRequiredHashes":["c585584484a53b95995eae5e565865edbb98d9007477a6dfd1db955529815c2b","ce22270080176e15a214fd7386db0c68f944d7e2e362b8df07060ee7a1bbe336","2efd52191738b91c0d50a0842b5ac29fd4f1ef1322a2528d0918c9ec70df5017","f95cb062df1cc4235f203a24638458f5e6db6f621d9e1f58ad8dd72b08973515","60b8e8f7e478850393ab4ab43629c0f71192b9e1227381d295c3f9f38095ba70","192be4411019d42dc6fa2098372f84f4a8abdfd3e253542fd01897d271d195ea","aa0f21241cfccac002054dfe06e10eb7d0675a4a1906f38e94ba33a771351f88","bbc81756369a4d9d9cb53342e345b21b6c7b53666b47096821b66ff319b4e7bc"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files"}
+[debug] [2022-03-17T16:43:27.672Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/c585584484a53b95995eae5e565865edbb98d9007477a6dfd1db955529815c2b [none]
+[debug] [2022-03-17T16:43:27.673Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/c585584484a53b95995eae5e565865edbb98d9007477a6dfd1db955529815c2b [stream]
+[debug] [2022-03-17T16:43:27.680Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/ce22270080176e15a214fd7386db0c68f944d7e2e362b8df07060ee7a1bbe336 [none]
+[debug] [2022-03-17T16:43:27.681Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/ce22270080176e15a214fd7386db0c68f944d7e2e362b8df07060ee7a1bbe336 [stream]
+[debug] [2022-03-17T16:43:27.686Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/2efd52191738b91c0d50a0842b5ac29fd4f1ef1322a2528d0918c9ec70df5017 [none]
+[debug] [2022-03-17T16:43:27.687Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/2efd52191738b91c0d50a0842b5ac29fd4f1ef1322a2528d0918c9ec70df5017 [stream]
+[debug] [2022-03-17T16:43:27.693Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/f95cb062df1cc4235f203a24638458f5e6db6f621d9e1f58ad8dd72b08973515 [none]
+[debug] [2022-03-17T16:43:27.694Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/f95cb062df1cc4235f203a24638458f5e6db6f621d9e1f58ad8dd72b08973515 [stream]
+[debug] [2022-03-17T16:43:27.696Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/60b8e8f7e478850393ab4ab43629c0f71192b9e1227381d295c3f9f38095ba70 [none]
+[debug] [2022-03-17T16:43:27.696Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/60b8e8f7e478850393ab4ab43629c0f71192b9e1227381d295c3f9f38095ba70 [stream]
+[debug] [2022-03-17T16:43:27.699Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/192be4411019d42dc6fa2098372f84f4a8abdfd3e253542fd01897d271d195ea [none]
+[debug] [2022-03-17T16:43:27.700Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/192be4411019d42dc6fa2098372f84f4a8abdfd3e253542fd01897d271d195ea [stream]
+[debug] [2022-03-17T16:43:27.702Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/aa0f21241cfccac002054dfe06e10eb7d0675a4a1906f38e94ba33a771351f88 [none]
+[debug] [2022-03-17T16:43:27.702Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/aa0f21241cfccac002054dfe06e10eb7d0675a4a1906f38e94ba33a771351f88 [stream]
+[debug] [2022-03-17T16:43:27.703Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/bbc81756369a4d9d9cb53342e345b21b6c7b53666b47096821b66ff319b4e7bc [none]
+[debug] [2022-03-17T16:43:27.703Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/bbc81756369a4d9d9cb53342e345b21b6c7b53666b47096821b66ff319b4e7bc [stream]
+[debug] [2022-03-17T16:43:27.705Z] [hosting][populate queue][FINAL] {"max":2126,"min":2126,"avg":2126,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2160}
+[debug] [2022-03-17T16:43:27.705Z] [hosting] uploads queued: 8
+[debug] [2022-03-17T16:43:30.360Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/aa0f21241cfccac002054dfe06e10eb7d0675a4a1906f38e94ba33a771351f88 200
+[debug] [2022-03-17T16:43:30.363Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/aa0f21241cfccac002054dfe06e10eb7d0675a4a1906f38e94ba33a771351f88 [stream]
+[debug] [2022-03-17T16:43:30.504Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/2efd52191738b91c0d50a0842b5ac29fd4f1ef1322a2528d0918c9ec70df5017 200
+[debug] [2022-03-17T16:43:30.504Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/2efd52191738b91c0d50a0842b5ac29fd4f1ef1322a2528d0918c9ec70df5017 [stream]
+[debug] [2022-03-17T16:43:30.815Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/f95cb062df1cc4235f203a24638458f5e6db6f621d9e1f58ad8dd72b08973515 200
+[debug] [2022-03-17T16:43:30.816Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/f95cb062df1cc4235f203a24638458f5e6db6f621d9e1f58ad8dd72b08973515 [stream]
+[debug] [2022-03-17T16:43:30.890Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/60b8e8f7e478850393ab4ab43629c0f71192b9e1227381d295c3f9f38095ba70 200
+[debug] [2022-03-17T16:43:30.890Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/60b8e8f7e478850393ab4ab43629c0f71192b9e1227381d295c3f9f38095ba70 [stream]
+[debug] [2022-03-17T16:43:30.969Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/bbc81756369a4d9d9cb53342e345b21b6c7b53666b47096821b66ff319b4e7bc 200
+[debug] [2022-03-17T16:43:30.970Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/bbc81756369a4d9d9cb53342e345b21b6c7b53666b47096821b66ff319b4e7bc [stream]
+[debug] [2022-03-17T16:43:31.238Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/c585584484a53b95995eae5e565865edbb98d9007477a6dfd1db955529815c2b 200
+[debug] [2022-03-17T16:43:31.239Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/c585584484a53b95995eae5e565865edbb98d9007477a6dfd1db955529815c2b [stream]
+[debug] [2022-03-17T16:43:31.660Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/ce22270080176e15a214fd7386db0c68f944d7e2e362b8df07060ee7a1bbe336 200
+[debug] [2022-03-17T16:43:31.661Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/ce22270080176e15a214fd7386db0c68f944d7e2e362b8df07060ee7a1bbe336 [stream]
+[debug] [2022-03-17T16:43:32.514Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/192be4411019d42dc6fa2098372f84f4a8abdfd3e253542fd01897d271d195ea 200
+[debug] [2022-03-17T16:43:32.514Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/skilline/versions/12527f77f0c30461/files/192be4411019d42dc6fa2098372f84f4a8abdfd3e253542fd01897d271d195ea [stream]
+[debug] [2022-03-17T16:43:32.515Z] [hosting][upload queue][FINAL] {"max":4847,"min":2694,"avg":3453.75,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":4854}
+[info] +  hosting[skilline]: file upload complete 
+[debug] [2022-03-17T16:43:32.519Z] [hosting] deploy completed after 7205ms
+[debug] [2022-03-17T16:43:32.534Z] [
+  {
+    "config": {
+      "public": "build",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "skilline"
+    },
+    "site": "skilline",
+    "version": "projects/470694934165/sites/skilline/versions/12527f77f0c30461"
+  }
+]
+[info] i  hosting[skilline]: finalizing version... 
+[debug] [2022-03-17T16:43:32.542Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461 updateMask=status
+[debug] [2022-03-17T16:43:32.544Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461 {"status":"FINALIZED"}
+[debug] [2022-03-17T16:43:34.471Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461 200
+[debug] [2022-03-17T16:43:34.472Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/versions/12527f77f0c30461 {"name":"projects/470694934165/sites/skilline/versions/12527f77f0c30461","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-03-17T16:43:25.280438Z","createUser":{"email":"shuhel020@gmail.com"},"finalizeTime":"2022-03-17T16:43:34.636292Z","finalizeUser":{"email":"shuhel020@gmail.com"}}
+[debug] [2022-03-17T16:43:34.472Z] [hosting] finalized version for skilline:[object Object]
+[info] +  hosting[skilline]: version finalized 
+[info] i  hosting[skilline]: releasing new version... 
+[debug] [2022-03-17T16:43:34.476Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/releases versionName=projects%2F470694934165%2Fsites%2Fskilline%2Fversions%2F12527f77f0c30461
+[debug] [2022-03-17T16:43:34.477Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/releases {"message":null}
+[debug] [2022-03-17T16:43:38.185Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/releases 200
+[debug] [2022-03-17T16:43:38.185Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/470694934165/sites/skilline/releases {"name":"projects/470694934165/sites/skilline/releases/1647535417397717","version":{"name":"projects/470694934165/sites/skilline/versions/12527f77f0c30461","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-03-17T16:43:25.280438Z","createUser":{"email":"shuhel020@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14Gj-kZpz81qNQ8rPujWdV0gz1DXTcqEwWu9PioS6yA"},"finalizeTime":"2022-03-17T16:43:34.636292Z","finalizeUser":{"email":"shuhel020@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14Gj-kZpz81qNQ8rPujWdV0gz1DXTcqEwWu9PioS6yA"}},"type":"DEPLOY","releaseTime":"2022-03-17T16:43:37.397717921Z","releaseUser":{"email":"shuhel020@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14Gj-kZpz81qNQ8rPujWdV0gz1DXTcqEwWu9PioS6yA"}}
+[debug] [2022-03-17T16:43:38.186Z] [hosting] release: {"name":"projects/470694934165/sites/skilline/releases/1647535417397717","version":{"name":"projects/470694934165/sites/skilline/versions/12527f77f0c30461","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-03-17T16:43:25.280438Z","createUser":{"email":"shuhel020@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14Gj-kZpz81qNQ8rPujWdV0gz1DXTcqEwWu9PioS6yA"},"finalizeTime":"2022-03-17T16:43:34.636292Z","finalizeUser":{"email":"shuhel020@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14Gj-kZpz81qNQ8rPujWdV0gz1DXTcqEwWu9PioS6yA"}},"type":"DEPLOY","releaseTime":"2022-03-17T16:43:37.397717921Z","releaseUser":{"email":"shuhel020@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/AOh14Gj-kZpz81qNQ8rPujWdV0gz1DXTcqEwWu9PioS6yA"}}
+[info] +  hosting[skilline]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/skilline/overview
+[info] Hosting URL: https://skilline.web.app
